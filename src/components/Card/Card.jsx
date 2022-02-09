@@ -5,6 +5,7 @@ import {
   CardDescription,
 } from "./Card.styled";
 import flag from "./eg.png";
+
 const Card = () => {
   return (
     <CardContainer>
@@ -14,13 +15,13 @@ const Card = () => {
       <CardTitle>Egypt</CardTitle>
       <CardDescription>
         <div>
-          <span>Population: </span>100,00,00
+          <span>Population: </span> 100,00,00
         </div>
         <div>
-          <span>Region: </span>Africa
+          <span>Region: </span> Africa
         </div>
         <div>
-          <span>Capital: </span>Cairo
+          <span>Capital: </span> Cairo
         </div>
       </CardDescription>
     </CardContainer>
