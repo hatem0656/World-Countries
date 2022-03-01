@@ -34,6 +34,7 @@ export const ImageWrapper = styled.div`
   width: 400px;
   img {
     width: 100%;
+    height: 100%;
   }
   @media (min-width: 1200px) {
     width: 500px;
@@ -60,6 +61,7 @@ export const DetailsSection = styled.section`
 
   @media (min-width: 992px) {
     margin-left: 70px;
+    flex: 1;
   }
 
   @media (min-width: 1200px) {
@@ -85,21 +87,24 @@ export const InfoWrapper = styled(Flex)`
 `;
 
 export const BorderCountries = styled.div`
-  margin-top: 15px;
-
-  & > div {
-    font-size: 12px;
-    width: 250px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  span {
+    display: block;
   }
-
-  @media (min-width: 768px) {
-    & > div {
-      display: inline-flex;
-      margin-left: 5px;
+  button {
+    font-size: 14px;
+  }
+  span,
+  button {
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  @media (max-width: 575px) {
+    span {
+      width: 100%;
     }
   }
 `;

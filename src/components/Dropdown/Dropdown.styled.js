@@ -35,6 +35,7 @@ export const DropdownItems = styled.ul`
   z-index: 1000;
   width: 200px;
   margin-top: 5px;
+  padding: 5px 0;
   background-color: ${({ theme }) => theme.secondaryColor};
   border-radius: 5px;
   box-shadow: 0px 0px 7px 0px hsl(0deg 0% 52% / 24%);
@@ -42,11 +43,18 @@ export const DropdownItems = styled.ul`
   li {
     display: block;
     width: 100%;
-    padding: 10px 20px;
+    padding: 7px 20px;
     cursor: pointer;
   }
   li:hover {
     background-color: ${({ theme }) => theme.hoverColor};
   }
+  li::selection {
+    color: inherit;
+    background-color: inherit;
+  }
+  ${(props) => {
+    if (props.collapse) return `display: none ;`;
+    else return `display: block ;`;
+  }}
 `;
-// background-color: #d1c5c57a;

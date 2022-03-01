@@ -8,9 +8,7 @@ const SearchFieldStyled = styled.div`
   box-shadow: ${({ theme }) => theme.boxShadow || "initial"};
   @media (max-width: 720px) {
     margin-bottom: 20px;
-    margin-left: auto;
     margin-right: auto;
-    width: 100%;
   }
   i {
     position: absolute;

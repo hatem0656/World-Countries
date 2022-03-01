@@ -16,3 +16,12 @@ export const Icons = {
   lightIcon: "bi bi-moon",
   darkIcon: "bi bi-moon-fill",
 };
+
+export const Regions = [
+  "All",
+  "Africa",
+  "Americas",
+  "Asia",
+  "Europe",
+  "Oceania",
+];

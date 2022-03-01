@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const CardContainer = styled.div`
   width: 250px;
   margin-bottom: 20px;
+
   background-color: ${({ theme }) => theme.secondaryColor};
   box-shadow: ${({ theme }) => theme.boxShadow || "initial"};
   @media (max-width: 600px) {
@@ -15,6 +16,7 @@ export const CardImage = styled.div`
   width: 100%;
   img {
     width: 100%;
+    height: 150px;
   }
 `;
 
@@ -22,6 +24,7 @@ export const CardTitle = styled.h1`
   padding: 15px 21px;
   margin: 0;
   font-size: 20px;
+  cursor: pointer;
 `;
 
 export const CardDescription = styled.div`
