@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        transition: 0.2s ;
+       
     }
     body{ 
         margin: 0 ; 
