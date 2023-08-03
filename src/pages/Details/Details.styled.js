@@ -7,17 +7,14 @@ export const ButtonWrapper = styled.div`
   font-size: 12px;
   margin-bottom: 60px;
   margin-left: 10px;
-  i {
+  svg {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 28px;
-    font-size: 15px;
+    font-size: 1.1rem;
     color: inherit;
     margin-right: 10px;
-  }
-  i::before {
-    font-weight: 800 !important;
   }
 `;
 

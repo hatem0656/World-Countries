@@ -11,13 +11,11 @@ import {
 import { Link } from "react-router-dom";
 import axios from "axios";
 import addCommas from "../../utilts/addCommas";
-// import { useParams } from "react-router-dom";
-// import useFetch from "../../hooks/useFetch";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Icon } from "@iconify/react";
 
 const Details = () => {
-  // const { id } = useParams();
   const location = useLocation();
   const { country } = location.state;
   const [borderCountries, setBorderCountries] = useState(null);
@@ -38,12 +36,11 @@ const Details = () => {
       <Link to="/">
         <ButtonWrapper>
           <ButtonStyled padding="10px 30px 10px 50px">Back</ButtonStyled>
-          <i className="bi bi-arrow-left"></i>
+          <Icon icon="ph:arrow-left-thin"></Icon>
         </ButtonWrapper>
       </Link>
       {country && (
         <DetailsContainer>
-          {/* {!loading && console.log(borderCountries)} */}
           <ImageWrapper>
             <img src={country.flags.png} alt={`${country.name.common} flag`} />
           </ImageWrapper>

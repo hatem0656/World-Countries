@@ -1,6 +1,7 @@
 import { Styledheader } from "./Header.styled";
 import { Container, ContainerFull } from "../../helpers/Container.styled";
 import { Icons } from "../../helpers/Constants";
+import { Icon } from "@iconify/react";
 
 const Header = ({ darkTheme, toggleTheme }) => {
   return (
@@ -9,10 +10,10 @@ const Header = ({ darkTheme, toggleTheme }) => {
         <Styledheader>
           <h1>Where in the world? </h1>
           <div>
-            <i
-              className={darkTheme ? Icons.darkIcon : Icons.lightIcon}
+            <Icon
+              icon={darkTheme ? Icons.darkIcon : Icons.lightIcon}
               onClick={() => toggleTheme(!darkTheme)}
-            ></i>
+            ></Icon>
             <span>Dark Mode</span>
           </div>
         </Styledheader>

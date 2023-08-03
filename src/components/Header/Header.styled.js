@@ -6,21 +6,26 @@ export const Styledheader = styled.header`
   align-items: center;
   font-size: 14px;
   width: 100%;
+
   h1 {
     font-size: 20px;
     flex: 1;
     font-weight: 800;
   }
-  i {
+  div {
+    display: flex;
+
+    align-items: center;
+  }
+  svg {
     color: inherit;
+    font-size: 1.1rem;
     margin-right: 7px;
     cursor: pointer;
-    &:hover::before {
+    transform: rotateZ(0deg);
+    transition: 0.2s;
+    &:hover {
       transform: rotateZ(15deg);
-    }
-    &::before {
-      transform: rotateZ(0deg);
-      transition: 0.2s;
     }
   }
   span {

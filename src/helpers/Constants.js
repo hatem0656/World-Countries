@@ -13,8 +13,8 @@ export const DarkTheme = {
   hoverColor: "hsl(0, 12% ,80% , 48%)",
 };
 export const Icons = {
-  lightIcon: "bi bi-moon",
-  darkIcon: "bi bi-moon-fill",
+  lightIcon: "ph:moon",
+  darkIcon: "ph:moon-fill",
 };
 
 export const Regions = [
